@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html "%}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <!-- <h1>This is index.html page showing!</h1> -->
+    <!-- Variable is text and filter is upper -->
+    <!-- <h1>{{ text|upper }}</h1> -->
+    <h1>{{ text|cut:'world' }}</h1>
+    <!-- Variable is number and filter is add: (adds "99" to variable) -->
+    <h1>{{ number|add:"99" }}</h1>
+
+  {% endblock %}
